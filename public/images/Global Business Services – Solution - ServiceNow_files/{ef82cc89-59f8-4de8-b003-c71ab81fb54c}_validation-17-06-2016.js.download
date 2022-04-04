@@ -1,0 +1,143 @@
+var check;
+		function validate()
+		{
+			check=true;
+			if(document.getElementById("field5").value=="" || document.getElementById("field5").value==null)
+			{
+				document.getElementById("1").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("1").style.display="none";
+				
+			}
+			if(document.getElementById("field6").value=="" || document.getElementById("field6").value==null)
+			{
+				document.getElementById("2").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("2").style.display="none";
+			
+			}
+			if(document.getElementById("field7").value=="" || document.getElementById("field7").value==null)
+			{
+				document.getElementById("3").style.display="block";
+				check=false;
+			}
+			else
+			{
+
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var flag=re.test(document.getElementById("field7").value);
+                 //alert(flag);
+				if(flag==false)
+				{
+					document.getElementById("3").style.display="block";
+					document.getElementById("3").innerHTML="Please enter valid Email address";
+				check=false;
+				}
+				else
+				{
+				document.getElementById("3").style.display="none";
+				
+				}
+			}
+			if(document.getElementById("field8").value=="" || document.getElementById("field8").value==null)
+			{
+				 document.getElementById("4").innerHTML="This field is required";
+				document.getElementById("4").style.display="block";
+				check=false;	
+				
+			}
+			else
+			{
+				var phnrgx=/^[0-9-+]+$/;
+				 if (phnrgx.test(document.getElementById("field8").value)) 
+				 {
+                   document.getElementById("4").style.display="none";      
+				 }
+				 else 
+				 {
+					 document.getElementById("4").innerHTML="Please enter a valid phone number";
+					document.getElementById("4").style.display="block";
+				check=false;	
+				 }
+				
+				
+			}
+			if(document.getElementById("field9").value=="" || document.getElementById("field9").value==null)
+			{
+				document.getElementById("5").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("5").style.display="none";
+			
+			}
+			if(document.getElementById("field10").value=="" || document.getElementById("field10").value==null)
+			{
+				document.getElementById("6").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("6").style.display="none";
+				
+			}
+			if(document.getElementById("field11").value=="")
+			{
+				
+				document.getElementById("7").style.display="block";
+				check=false;
+			}
+			else
+			{
+
+					document.getElementById("7").style.display="none";
+					
+			}
+			if(document.getElementById("field12").value=="")
+			{
+				
+				document.getElementById("8").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("8").style.display="none";
+			
+			}
+			if(document.getElementById("field13").value=="" || document.getElementById("field13").value==null)
+			{
+				document.getElementById("9").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("9").style.display="none";
+				
+			}
+			if(document.getElementById("field14").value=="" || document.getElementById("field14").value==null)
+			{
+				document.getElementById("10").style.display="block";
+				check=false;
+			}
+			else
+			{
+				document.getElementById("10").style.display="none";
+				
+			}
+			
+			if(check==true)
+			{
+			return true;
+			}
+			else
+			{
+		      return false;
+			}
+		}

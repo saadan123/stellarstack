@@ -1,0 +1,15 @@
+
+
+
+$( document ).ready(function() {
+    var i;
+      $("input[name='botcapture']").each(function(){
+       
+       $(this).hide();
+        
+       $(this).val("5");
+      
+      });
+      
+      $("label[for='botcapture']").hide();
+});

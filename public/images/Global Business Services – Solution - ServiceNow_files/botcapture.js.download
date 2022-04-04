@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    // moved the botcapture from Eloqua to AEM
+    setTimeout(function(){
+        $("input[name='botcapture']").each(function(){
+            $(this).hide();
+            $(this).val("5");
+        });
+        $("label[for='botcapture']").hide();
+    }, 500)
+})

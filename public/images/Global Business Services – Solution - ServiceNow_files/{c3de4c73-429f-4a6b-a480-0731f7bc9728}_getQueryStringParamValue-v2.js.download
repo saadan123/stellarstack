@@ -1,0 +1,36 @@
+		  $(document).ready(function() {
+					$('input:hidden[name="referenceSource"]').val( getQueryStringParamValue('referenceSource') );
+					$('input:hidden[name="elqcid"]').val( getQueryStringParamValue('elqcid') );
+					$('input:hidden[name="elqcamp"]').val( getQueryStringParamValue('elqcamp') );
+					$('input:hidden[name="elqmid"]').val( getQueryStringParamValue('elqmid') );
+			});
+
+
+
+function getQueryStringParamValue(strQStrParam) { 
+
+var strURL = document.location.href; 
+var defaultHiddenFieldNameValue = ""; 
+
+var strQStrParamValue = ""; 
+
+           if (strURL.indexOf('?') != -1)
+           {
+                       strQStrParamValue = strURL.substr(strURL.indexOf('?') + 1);
+                       if (strQStrParamValue.indexOf(strQStrParam) != -1)
+                       {
+                                   strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf(strQStrParam));
+                                   strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf('=') + 1);
+                                   if (strQStrParamValue.indexOf('&') != -1)
+                                   strQStrParamValue = strQStrParamValue.substr(0, strQStrParamValue.indexOf('&'));
+                                   return strQStrParamValue;
+
+                       }else{
+                                   strQStrParamValue = defaultHiddenFieldNameValue;
+                                   return strQStrParamValue;
+                       }
+           }else{
+                       strQStrParamValue = defaultHiddenFieldNameValue;
+                       return strQStrParamValue;
+           }
+}
