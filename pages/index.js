@@ -1,19 +1,19 @@
-import Home from "./page1";
-import Footer from "./Footer";
-import Headnav from "./Headernav";
-import Belownav from "./Belownav";
-import Belownav2 from "./Belownav2";
-import ImageComp from "./ImageComp";
-import Divs3 from "./Divs3";
-import Divs32 from "./Divs32";
-import Imagerev from "./Imagerev";
-import Divs33 from "./Divs33";
-import Imagerev2 from "./Imagerev2";
-import Comp13 from "./comp13";
-import Imagecomp3div from "./Imagecomp3div";
-import FeaturedComp from "./Featuredcomp";
-import Comp4div from "./Comp4div";
-import Divs34 from "./Divs34";
+import Home from '../src/components/page1';
+import Footer from '../src/components/Footer';
+import Headnav from '../src/components/Headnav';
+import Belownav from '../src/components/Belownav';
+import Belownav2 from '../src/components/Belownav2';
+import ImageComp from '../src/components/ImageComp';
+import Divs3 from '../src/components/Divs3';
+import Divs32 from '../src/components/Divs32';
+import Imagerev from '../src/components/Imagerev';
+import Divs33 from '../src/components/Divs33';
+import Imagerev2 from '../src/components/Imagerev2';
+import Comp13 from '../src/components/Comp13';
+import Imagecomp3div from '../src/components/Imagecomp3div';
+import FeaturedComp from '../src/components/FeaturedComp';
+import Comp4div from '../src/components/Comp4div';
+import Divs34 from '../src/components/Divs34';
 export default function MyApp() {
   return (
       <div>
